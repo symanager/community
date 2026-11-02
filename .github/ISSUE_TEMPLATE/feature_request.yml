@@ -1,0 +1,25 @@
+name: Feature request
+description: Suggest something SyManager should do.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like to do in SyManager?
+      description: Describe what you're trying to get done, and where you'd expect to find it.
+    validations:
+      required: true
+  - type: textarea
+    id: dsm
+    attributes:
+      label: How do you do it in DSM today?
+      description: The DSM app or Control Panel page, if there is one.
+    validations:
+      required: false
+  - type: input
+    id: nas
+    attributes:
+      label: NAS model and DSM version
+      placeholder: DS923+, DSM 7.2.2
+    validations:
+      required: false

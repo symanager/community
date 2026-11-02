@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and tips
+    url: https://github.com/symanager/community/discussions
+    about: Ask how to do something, or share how you use SyManager.
+  - name: Security problem
+    url: https://github.com/symanager/community/security/advisories/new
+    about: Report a security issue privately instead of in a public issue.

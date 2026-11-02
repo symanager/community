@@ -1,0 +1,76 @@
+name: Bug report
+description: Something in SyManager doesn't work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Issues are **public**: don't include passwords, your QuickConnect ID, public IP addresses or anything else private. Blur screenshots if needed.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Which screen, and what did you tap?
+      placeholder: |
+        1. Open Control Panel → Shared Folders
+        2. Tap a folder
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: SyManager version
+      description: Settings → About, or the TestFlight build number.
+      placeholder: 0.1.0 (1)
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: iPhone 17 Pro, iOS 26.1
+    validations:
+      required: true
+  - type: input
+    id: nas
+    attributes:
+      label: NAS model and DSM version
+      placeholder: DS923+, DSM 7.2.2
+    validations:
+      required: true
+  - type: dropdown
+    id: connection
+    attributes:
+      label: How do you connect?
+      options:
+        - Local address (same Wi-Fi)
+        - QuickConnect
+        - Domain name or public address
+        - VPN
+        - Demo mode
+    validations:
+      required: true
+  - type: dropdown
+    id: account
+    attributes:
+      label: Account type
+      options:
+        - Administrator
+        - Regular user
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recording
+      description: Drag files here. Please hide anything private first.
+    validations:
+      required: false
